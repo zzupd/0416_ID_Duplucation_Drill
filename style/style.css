@@ -64,9 +64,9 @@ div#wrap ul li {
 }
 
 
-/*#wrap li span {
+#wrap li span {
     border: 1px solid #08f;
-}*/
+}
 
 #wrap li span:first-child {
     width: 180px;
@@ -80,7 +80,7 @@ div#wrap ul li {
     padding-left: 6px;
     flex: 1;
 }
-#wrap li span input {
+#wrap li span input:first-child {
     width: 180px;
     font-size: 20px;
 
@@ -114,9 +114,18 @@ span#idChkMsg {
 span#idChkMsg::before {
     content: " * ";
 }
+    /* ID 중복 메시지 출력 */
+
 
 /* ID, 비밀번호 입력 */
 
+
+/* 비밀번호 보기 */
+#wrap li span input[type=checkbox]+span {
+    font-size: 16px;
+    padding-left: 0;
+}
+/* 비밀번호 보기 */
 
 
 
