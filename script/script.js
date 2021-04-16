@@ -13,12 +13,33 @@ $(function(){
             }
         });
 
+        var msg="";    // message
         if(idUseChk) {
-            alert("사용가능");
+            msg = "사용가능";
         } else {
-            alert("사용중인 ID");
+            msg = "사용중인 ID"
         }
+
+        var spanChk = $("#uID").next().is("span");
+        // span요소 유무 체크
+        if (spanChk) {
+            $("span#idChkMsg").remove();
+        }
+
+        $("<span id='idChkMsg'>"+ msg +"</span>").insertAfter("#uID");
+        // $("A").insertAfter("B);  요소A를 요소B 뒤로 이동하세요
+
 
     });
 
+    $("button[type=reset]").click(function(){
+        $("span#idChkMsg").remove();
+    });
+
+
+
+
 });
+
+
+

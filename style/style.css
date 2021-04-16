@@ -53,11 +53,9 @@ div#wrap ul li {
     font-size: 20px;
     line-height: 24px;
     padding: 2px 0;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     margin: 4px 0;
-}
 
-#wrap li {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -65,9 +63,11 @@ div#wrap ul li {
     display: flex;
 }
 
-#wrap li span {
+
+/*#wrap li span {
     border: 1px solid #08f;
-}
+}*/
+
 #wrap li span:first-child {
     width: 180px;
     text-align: right;
@@ -75,13 +75,19 @@ div#wrap ul li {
 }
 
 #wrap li span:last-child {
+    /*border-bottom: 1px solid #aaa;*/
+
     padding-left: 6px;
     flex: 1;
-
 }
 #wrap li span input {
     width: 180px;
     font-size: 20px;
+
+    border: none;
+    outline: none;
+
+    border-bottom: 1px solid #aaa;
 }
 
 #wrap li:last-child {
@@ -92,6 +98,23 @@ div#wrap ul li {
     padding: 4px 16px;
     margin: 6px;
 }
+
+    /* ID 중복 메시지 출력 */
+span#idChkMsg {
+    width: 160px;
+    color: #f30;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 60px;
+    border: none !important;
+
+    display: inline-block;
+}
+
+span#idChkMsg::before {
+    content: " * ";
+}
+
 /* ID, 비밀번호 입력 */
 
 
