@@ -64,9 +64,9 @@ div#wrap ul li {
 }
 
 
-#wrap li span {
+/*#wrap li span {
     border: 1px solid #08f;
-}
+}*/
 
 #wrap li span:first-child {
     width: 180px;
@@ -100,7 +100,8 @@ div#wrap ul li {
 }
 
     /* ID 중복 메시지 출력 */
-span#idChkMsg {
+span#idChkMsg,
+span#pwChkMsg {
     width: 160px;
     color: #f30;
     font-size: 12px;
@@ -111,7 +112,8 @@ span#idChkMsg {
     display: inline-block;
 }
 
-span#idChkMsg::before {
+span#idChkMsg::before,
+span#pwChkMsg::before {
     content: " * ";
 }
     /* ID 중복 메시지 출력 */
