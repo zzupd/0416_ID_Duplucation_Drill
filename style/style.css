@@ -36,6 +36,10 @@ div#wrap {
 header#header {
     text-align: center;
 }
+#header div {
+    font-size: 20px;
+    margin-top: 30px;
+}
 /* header#header */
 
 /* ID, 비밀번호 입력 */
